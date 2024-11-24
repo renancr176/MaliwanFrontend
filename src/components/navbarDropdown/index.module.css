@@ -1,0 +1,25 @@
+.navDropdownMenu {
+    padding: 0 3rem !important;
+}
+
+.navDropdownMenu ::after {
+    display: none !important;
+}
+
+.navDropdownTitle{  
+    pointer-events: none !important;
+    color: var(--mwText4) !important;
+    font-weight: bolder !important;
+    font-size: 1.3rem;
+    padding: 0 7rem;
+    text-align: center !important;
+}
+
+.navDropdownDivider {
+    padding: 0 7rem;
+}
+
+.navDropdownMenu a {
+    text-align: center !important;
+    transition: all .1s ease-in-out !important; 
+}

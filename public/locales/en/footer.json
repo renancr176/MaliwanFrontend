@@ -1,0 +1,54 @@
+{
+    "newsletter1": "Want to know more about Maliwan?",
+    "newsletter2": "Sign up for our newsletter!",
+    "email": "email",
+    "socialMedias" : "Social Medias",
+    "subscribe": "Sign up",
+    "copyright": "Copyright © 2022 Maliwan. All rights reserved.",
+    "section1": {
+        "title": "",
+        "link1": "About Us",
+        "link2": "Testimonials",
+        "link3": "Careers",
+        "link4": "Contact us",
+        "link5": "Sales",
+        "link6": "FAQ"
+    },
+    "section2": {
+        "title": "Contracts",
+        "link1": "Term Installment SMP",
+        "link2": "SMP coverage",
+        "link4": "Privacy Policy"
+    },
+    "section3": {
+        "title": "Internet",
+        "link1": "Dedicated Link",
+        "link2": "Broadband",
+        "link3": "Wi-Fi",
+        "link4": "Link"
+    },
+    "section6": {
+        "title": "Events",
+        "link1": "Event Services",
+        "link2": "Maliwan Events"
+    },
+    "section4": {
+        "title": "Telephony",
+        "link1": "Virtual IP-PBX",
+        "link2": "E1",
+        "link3": "SIP TRUNK",
+        "link4": "Numbers 0800 e 40XX"
+    },
+    "section7": {
+        "title": "Mobility",
+        "link1": "MVNA/E",
+        "link2": "Phone Plans"
+    },
+    "section5": {
+        "title": "Networks and Infrastructure",
+        "link1": "Lan-to-Lan",
+        "link2": "MPLS",
+        "link3": "Dark Fiber and Ducts",
+        "link4": "Co-location"
+    }
+}

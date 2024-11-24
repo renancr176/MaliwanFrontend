@@ -1,0 +1,37 @@
+{
+    "headerTop": {
+      "text": "6 MESES DE SERVIÇO GRÁTIS Quando você comprar um telefone +6 meses de plano.",
+      "link": "Saiba mais",
+      "active": "Ativar",
+      "login": "Iniciar sessão"
+    },
+  
+    "link": {
+      "mobility": "Planos de Celular",
+      "solutions": "Outras Soluções"
+    },
+  
+    "internet": {
+      "title": "Internet",
+      "internet": "Internet Dedicada",
+      "band": "Banda Larga",
+      "wifi": "Wi-Fi"
+    },
+  
+    "telephone": {
+      "title": "Telefonia",
+      "pabx": "PABX IP Virtual",
+      "e1": "E1",
+      "sip": "SIP TRUNK",
+      "numbers": "Números 0800 & 40XX"
+    },
+  
+    "categorySolutions": {
+      "events": "Eventos",
+      "activTrak": "ActivTrak",
+      "network": "Rede & Infra"
+    },
+  
+    "signOut": "Sair"
+  }
+  

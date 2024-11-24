@@ -1,0 +1,26 @@
+{
+    "greeting": "Hello, ",
+    "myArea": "My Area",
+    "account": {
+        "editAccount": "Change Account",
+        "orders": "Orders",
+        "consumption": "Consumption history"
+    },
+    "admin":{
+        "main" : "Home",
+        "products": "Products",
+        "paymentMethods": "Payment Methods",
+        "customers": "Customers",
+        "users": {
+            "title": "Users",
+            "admin": "User Management",
+            "profiles": "User Profiles"
+        },
+        "queries": {
+            "title": "Queries",
+            "invoiceReport": "Invoice and History Report"
+        },
+        "orders": "Orders",
+        "catalogs": "Catalogs"
+    }
+}

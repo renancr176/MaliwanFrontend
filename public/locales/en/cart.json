@@ -1,0 +1,51 @@
+{
+    "alert": {
+        "addCatalog":"has been added to your cart.",
+        "removeCatalog": "has been removed from cart."
+    },
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty.",
+    "productCard": {
+        "product": "Product",
+        "quantity": "Quantity",
+        "amount": "Amount",
+        "DDD": "Area Code",
+        "number": "Choose account type",
+        "includeSMS": "Include SMS package",
+        "prepaid" : "Prepaid",
+        "dueDate" : "invoice due date"
+    },
+    "summary": {
+        "title": "Summary",
+        "subtotalLabel": "Subtotal",
+        "shippingLabel": "Shipping",
+        "shippingValueLabel": "Shipping",
+        "cepLabel": "Zip Code*",
+        "cepBtn": "Update",
+        "cupom": "Have a coupon?",
+        "tax": "Taxes and fees calculated at checkout",
+        "total": "Total",
+        "btnCheckout": "Proceed to Checkout"
+    },
+    "advantages": {
+        "0": {
+            "title": "7-DAY MONEY BACK GUARANTEE",
+            "description": "Get a full refund up to 7 days after you activate your plan."
+        },
+        "1": {
+            "title": "SHOP WITH CONFIDENCE",
+            "description": "Your info is safe with us. We use 256-bit SSL encryption to process your payment as securely as possible."
+        },
+        "2": {
+            "title": "EASY PEASY PAYMENTS",
+            "description": "We accept payments from all major credit card companies Cha-charge it!"
+        },
+        "3": {
+            "title": "FREE 3-5 DAY DELIVERY",
+            "description": "We don't mind breaking a sweat to process and ship out your order ASAP."
+        }
+    },
+    "error": {
+        "notDeliverZipCode": "Unavailable deliveries for this zip code."
+    }
+}

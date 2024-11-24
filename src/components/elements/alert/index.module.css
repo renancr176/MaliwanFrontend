@@ -1,0 +1,11 @@
+.default {
+    border: none;
+    background: var(--mwBackground4);
+    border-radius: 1rem;
+    padding: 0.5rem;
+    color: var(--mwText2);
+    vertical-align: center;
+    text-align: center;
+    width: 95%;
+    margin: 1rem auto;
+}

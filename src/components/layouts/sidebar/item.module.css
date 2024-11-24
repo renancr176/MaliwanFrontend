@@ -1,0 +1,30 @@
+.wrapper {
+    padding: 0 1rem;
+}
+
+.menuButton {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border: none;
+    background: transparent;
+    font-weight: bolder;
+    color: var(--mwText4);
+}
+
+.menuButton:hover {
+    color: var(--mwText3);
+}
+
+.wrapper > ul {
+    list-style: circle; 
+    margin-left: 1rem;
+    border-left: 1px dashed var(--mwColor2);
+}
+
+
+
+

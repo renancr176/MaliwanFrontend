@@ -1,0 +1,24 @@
+{
+    "greeting": "Olá, ",
+    "account": {
+        "editAccount": "Alterar Conta",
+        "orders": "Pedidos",
+        "consumption": "Histórico de consumo"
+    },
+    "admin":{
+        "main" : "Início",
+        "products": "Produtos",
+        "paymentMethods": "Formas de Pagamento",
+        "customers": "Clientes",
+        "users": {
+            "title": "Usuários",
+            "admin": "Administração de Usuários"
+        },
+        "queries": {
+            "title": "Consultas",
+            "invoiceReport": "Relatório de Faturas e Históricos"
+        },
+        "orders": "Pedidos",
+        "catalogs": "Catalogos"
+    }
+}

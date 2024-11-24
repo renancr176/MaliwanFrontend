@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+	--mw-dark: #31353b;
+	--mw-red: #ca1c2a;
+	--mw-light-red: #f6dcde;
+	--mw-blue: #0b5b98;
+	--mw-dark-blue: #003b71;
+	--mw-light-blue: #d9e6ef;
+	--mw-font1: 'Roboto', sans-serif;
+	--mw-font2: 'Roboto', sans-serif;
+	--mw-font3: 'Roboto', sans-serif;
+}
+
+* {
+	font-family: var(--mw-font1);
+}
+
+.btn-mw-red,
+.btn-mw-red:hover,
+.btn-mw-red:focus,
+.btn-mw-red:focus-visible,
+.btn-mw-red:active {
+	background-color: var(--mw-red);
+	border: 1px solid var(--mw-red);
+}
+
+.btn-mw-red:hover {
+	filter: brightness(90%);
+}
+
+.btn-mw-red:focus,
+.btn-mw-red:active {
+	box-shadow: 0 0 0 0.25rem rgba(202, 28, 42, 0.5);
+}
+
+.btn-mw-blue,
+.btn-mw-blue:hover,
+.btn-mw-blue:focus,
+.btn-mw-blue:focus-visible,
+.btn-mw-blue:active {
+	background-color: var(--mw-blue);
+	border: 1px solid var(--mw-blue);
+}
+
+.btn-mw-blue:hover {
+	filter: brightness(90%);
+}
+
+.btn-mw-blue:focus,
+.btn-mw-blue:active {
+	box-shadow: 0 0 0 0.25rem rgba(11, 91, 152, 0.5);
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.animate-spin{
+	animation-name: spin;
+	animation-duration: 1000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.remove-scroll {
+	overflow: hidden;
+}
+
+.ck.ck-content:not(.ck-comment__input *) {
+    height: 10rem;
+    overflow-y: auto;
+	color: #212529;
+}

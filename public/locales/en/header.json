@@ -1,0 +1,38 @@
+{
+    "headerTop": {
+      "text": "6 MONTHS FREE SERVICE When You Buy a Phone + 6 Month Plan.",
+      "link": "Learn More",
+      "active": "Activate",
+      "login": "Log In"
+    },
+  
+    "link": {
+      "mobility": "Cell Plans",
+      "telephone": "Fixed Phone",
+      "solutions": "Other Solutions"
+    },
+  
+    "internet": {
+      "title": "Internet",
+      "internet": "Dedicated Internet",
+      "band": "Broadband",
+      "wifi": "Wi-Fi"
+    },
+  
+    "telephone": {
+      "title": "Telephony",
+      "pabx": "PABX IP Virtual",
+      "e1": "E1",
+      "sip": "SIP TRUNK",
+      "numbers": "0800 & 40XX Numbers"
+    },
+  
+    "categorySolutions": {
+      "events": "Eventos",
+      "activTrak": "ActivTrak",
+      "network": "Network & Infra"
+    },
+  
+    "signOut": "Sing Out"
+  }
+  

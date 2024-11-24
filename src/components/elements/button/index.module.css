@@ -1,0 +1,30 @@
+.button {
+    font-weight: bold;
+    border: none;
+    background-color: var(--mwColor1);
+    color: var(--mwText2);
+    padding: 0.5rem 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+.button:enabled:hover {
+    box-shadow: 0 6px 10px 0 rgb(0 0 0 / 25%);
+    transform: translateY(-1px);
+    cursor: pointer;
+}
+
+.button:enabled:active {
+    transform: translateY(1px);
+}
+
+.button:disabled {
+    background-color: #e5e5e5;
+    color: #808285;
+}
+
+.outlined {
+    background-color: transparent;
+    border: 2px solid var(--mwColor1);
+    color: var(--mwColor1);
+}

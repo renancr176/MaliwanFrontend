@@ -1,0 +1,16 @@
+.btnIcon {
+    color: var(--mwColor1);
+    width: max-content;
+    height: max-content;
+    border:none;
+    background-color: transparent;
+}
+
+.btnIcon:not(:disabled):hover {
+    color: var(--mwColor2);
+    cursor: pointer;
+}
+
+.btnIcon:not(:disabled):active {
+    transform: scale(0.99) translateY(2px);
+}

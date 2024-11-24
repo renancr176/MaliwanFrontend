@@ -1,0 +1,71 @@
+.wrapper {
+    height: auto;
+    min-width: 300px;
+    border-right: 1px solid var(--mwColor1);
+    color: var(--mwText1);
+    margin: 1rem 0;
+    background-color: var(--mwBackground1);
+}
+
+.togleBtnWrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+}
+.togleBtnWrapper span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 2rem;
+}
+
+.togleBtnWrapper button, .mobileButton {
+    border: none;
+    background-color: var(--mwBackground2);
+    color: var(--mwText2);
+    margin: 10px 0;
+    padding: 5px 20px 5px 10px !important;
+    border-radius: 20px 0 0 20px;
+}
+
+.togleBtnWrapper button:hover {
+    opacity: 0.9;
+}
+
+.mobileButton {
+    display: none;
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 10;
+    border-radius: 0 20px 20px 0;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+    padding: 1px 4px 1px 2px !important;
+}
+.mobileButton:hover {
+    opacity: 1;
+}
+
+@media (max-width: 990px) {
+    .mobileClosed {
+        display: none;
+    }
+    .mobileOpen {
+        display: block;
+    }
+    .mobileButton {
+        display: block;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        z-index: 99999;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+}

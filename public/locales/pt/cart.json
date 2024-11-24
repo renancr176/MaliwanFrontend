@@ -1,0 +1,51 @@
+{
+    "alert": {
+        "addCatalog":"foi adicionado ao carrinho.",
+        "removeCatalog": "foi removido do carrinho."
+    },
+    "title": "Carrinho de Compras",
+    "empty": "Seu carrinho está vazio.",
+    "productCard": {
+        "product": "Produto",
+        "quantity": "Quantidade",
+        "amount": "Valor",
+        "areaCode": "DDD",
+        "number": "Escolhe tipo de conta",
+        "includeSMS": "Incluir pacote SMS",
+        "prepaid" : "Pré-Pago",
+        "dueDate" : "Data de vencimento"      
+    },
+    "summary": {
+        "title": "Resumo",
+        "subtotalLabel": "Subtotal",
+        "shippingLabel": "Transporte",
+        "shippingValueLabel": "Envio",
+        "cepLabel": "CEP",
+        "cepBtn": "Atualizar",
+        "cupom": "Tem um cupom?",
+        "tax": "Impostos e taxas calculados no checkout.",
+        "total": "Total",
+        "btnCheckout": "Prossiga para o checkout"
+    },
+    "advantages": {
+        "0": {
+            "title": "GARANTIA DE VOLTA DO DINHEIRO EM 7 DIAS",
+            "description": "Obtenha um reembolso total até 7 dias depois de ativar seu plano."
+        },
+        "1": {
+            "title": "LOJA COM CONFIANÇA",
+            "description": "Sua informaçao está segura conosco. Usamos criptografia SSL de 256 bits para processar seu pagamento da forma mais segura possível."
+        },
+        "2": {
+            "title": "PAGAMENTOS FÁCIL",
+            "description": "Aceitamos pagamentos de todas as grandes empresas de cartao de crédiito, cobrando-o!"
+        },
+        "3": {
+            "title": "ENTREGA GRATUITA DE 3 A 5 DIAS",
+            "description": "Não nos importamos de suar para processar e enviar seu pedido o mais rápido possível."
+        }
+    },
+    "error": {
+        "notDeliverZipCode": "Entregas indisponíveis para este CEP."
+    }
+}

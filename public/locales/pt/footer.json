@@ -1,0 +1,54 @@
+{
+    "newsletter1": "Quer Saber mais sobre a Maliwan?",
+    "newsletter2": "Assine nossa newsletter!",
+    "email": "email",
+    "socialMedias" : "Social Medias",
+    "subscribe": "Inscreva-se",
+    "copyright": "Copyright © 2022 Maliwan. Todos os direitos reservados.",
+    "section1": {
+        "title": "",
+        "link1": "Institucional",
+        "link2": "Depoimentos",
+        "link3": "Carreiras",
+        "link4": "Contato",
+        "link5": "Vendas",
+        "link6": "FAQ"
+    },
+    "section2": {
+        "title": "Contratos",
+        "link1": "Termo Prestação SMP",
+        "link2": "Cobertura SMP",
+        "link4": "Política de Privacidade"
+    },
+    "section3": {
+        "title": "Internet",
+        "link1": "Link Dedicado",
+        "link2": "Banda Larga",
+        "link3": "Wi-Fi",
+        "link4": "Link"
+    },
+    "section6": {
+        "title": "Eventos",
+        "link1": "Serviços para Eventos",
+        "link2": "Eventos Maliwan"
+    },
+    "section4": {
+        "title": "Telefonia",
+        "link1": "PABX IP Virtual",
+        "link2": "E1",
+        "link3": "SIP Trunk",
+        "link4": "Números 0800 e 40XX"
+    },
+    "section7": {
+        "title": "Mobilidade",
+        "link1": "MVNA/E",
+        "link2": "Planos de Celular"
+    },
+    "section5": {
+        "title": "Rede e Infraestrutura",
+        "link1": "Ponto-a-Ponto",
+        "link2": "MPLS",
+        "link3": "Fibra Apagada e Dutos",
+        "link4": "Co-location"
+    }
+}
