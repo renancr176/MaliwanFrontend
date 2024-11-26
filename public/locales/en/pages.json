@@ -1,6 +1,61 @@
 {
     "home": "Home",
     "admin": {
-        "index": "Admin"
+        "index": "Admin",
+        "brands": {
+            "index": "Brands",
+            "add": "Add Brand",
+            "edit": "Edit Brand"
+        },
+        "categories": {
+            "index": "Categories",
+            "add": "Add Category",
+            "edit": "Edit Category"
+        },
+        "customers": {
+            "index": "Customers",
+            "add": "Add Customer",
+            "edit": "Edit Customer"
+        },
+        "genders": {
+            "index": "Genders",
+            "add": "Add Gender",
+            "edit": "Edit Gender"
+        },
+        "orders": {
+            "index": "Orders",
+            "add": "Add Order",
+            "edit": "Edit Order"
+        },
+        "paymentMethods": {
+            "index": "Payment Methods",
+            "add": "Add Payment Method",
+            "edit": "Edit Payment Method"
+        },
+        "products": {
+            "index": "Products",
+            "add": "Add Product",
+            "edit": "Edit Product"
+        },
+        "productColors": {
+            "index": "Product Colors",
+            "add": "Add Product Color",
+            "edit": "Edit Product Color"
+        },
+        "productSizes": {
+            "index": "Product Sizes",
+            "add": "Add Product Size",
+            "edit": "Edit Product Size"
+        },
+        "stocks": {
+            "index": "Stocks",
+            "add": "Add Stock",
+            "edit": "Edit Stock"
+        },
+        "subcategories": {
+            "index": "Subcategories",
+            "add": "Add Subcategory",
+            "edit": "Edit Subcategory"
+        }
     }
 }

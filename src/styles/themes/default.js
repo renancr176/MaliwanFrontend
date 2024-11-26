@@ -1,16 +1,16 @@
 const defaultTheme = {
-    mwColor1: "#c51531",
-    mwColor2: "#003b71",
+    mwColor1: "#712cf9",
+    mwColor2: "#0D6EFD",
     mwColor3: "#31353b",
     mwBackground1: "#fff",
-    mwBackground2: "#c51531",
+    mwBackground2: "#712cf9",
     mwBackground3: "#31353b",
-    mwBackground4: "#003b71",
+    mwBackground4: "#0D6EFD",
     mwBackground5: "#002b61",
     mwText1: "#31353b",
     mwText2: "#fafafa",
-    mwText3: "#c51531",
-    mwText4: "#003b71",
+    mwText3: "#712cf9",
+    mwText4: "#0D6EFD",
 
 }
 

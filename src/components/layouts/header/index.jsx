@@ -52,11 +52,6 @@ export default function Header() {
 			<div className={styles.headerTop}>
 				<Container fluid="xxl" className={styles.headerTopCointainer}>
 					<div>
-						{/* 
-						<Link to={activeUrl}>
-							{t("headerTop.active")} <BsPhone />
-						</Link>
-						*/}
 						{user ? (
 							<span>
 								<Link to={accountUrl}>
@@ -88,22 +83,16 @@ export default function Header() {
 				<Container>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />
 					<Navbar.Brand as={Link} className={styles.logo} to="/">
-						<img src="/imgs/maliwan-logo.svg" alt="maliwan" />
+						<img src="/logo.png" alt="maliwan" />
 					</Navbar.Brand>
 					<Navbar.Collapse
 						className={styles.collapseArea}
 						id="basic-navbar-nav"
 					>
 						<Nav className={styles.navCenter}>
-							<NavHashLink to="/#offers" scroll={el => scrollWithOffset(el)}>
+							{/* <NavHashLink to="/#offers" scroll={el => scrollWithOffset(el)}>
 								{t("link.mobility")}
 							</NavHashLink>
-
-							{/* <Nav.Link
-								href="https://www.maliwan.com/telefonia"
-								>
-								{t("link.telephone")}
-							</Nav.Link> */}
 
 							<CategoryDropdown title={t("telephone.title")}>
 								<NavDropdown.Item
@@ -111,64 +100,10 @@ export default function Header() {
 								>
 									{t("telephone.pabx")}
 								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/telefonia/e1"
-								>
-									{t("telephone.e1")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/telefonia/sip-trunk"
-								>
-									{t("telephone.sip")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://conteudo.maliwan.com/lp0800-40xx"
-								>
-									{t("telephone.numbers")}
-								</NavDropdown.Item>
-							</CategoryDropdown>
-
-							<CategoryDropdown title={t("internet.title")}>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/internet/internet-dedicada"
-								>
-									{t("internet.internet")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/internet/banda-larga"
-								>
-									{t("internet.band")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/internet/wi-fi"
-								>
-									{t("internet.wifi")}
-								</NavDropdown.Item>
-							</CategoryDropdown>
-
-							<CategoryDropdown title={t("link.solutions")}>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/rede-e-infraestrutura"
-								>
-									{t("categorySolutions.network")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/servicos-para-eventos"
-								>
-									{t("categorySolutions.events")}
-								</NavDropdown.Item>
-								<NavDropdown.Item
-									href="https://www.maliwan.com/activtrak"
-								>
-									{t("categorySolutions.activTrak")}
-								</NavDropdown.Item>
-							</CategoryDropdown>
+							</CategoryDropdown> */}
 						</Nav>
 						<Nav className={styles.navTopHiddenLinks}>
 							<NavDropdown.Divider />
-							<Nav.Link to={activeUrl}>
-								{t("headerTop.active")} <BsPhone />
-							</Nav.Link>
 							{user ? (
 								<>
 									<Nav.Link href={accountUrl}>

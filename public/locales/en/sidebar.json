@@ -8,19 +8,15 @@
     },
     "admin":{
         "main" : "Home",
-        "products": "Products",
-        "paymentMethods": "Payment Methods",
+        "brands": "Brands",
+        "categories": "Categories",
         "customers": "Customers",
-        "users": {
-            "title": "Users",
-            "admin": "User Management",
-            "profiles": "User Profiles"
-        },
-        "queries": {
-            "title": "Queries",
-            "invoiceReport": "Invoice and History Report"
-        },
+        "genders": "Genders",
         "orders": "Orders",
-        "catalogs": "Catalogs"
+        "paymentMethods": "Payment Methods",
+        "products": "Products",
+        "productColors": "Product Colors",
+        "productSizes": "Product Sizes",
+        "stocks": "Stocks"
     }
 }

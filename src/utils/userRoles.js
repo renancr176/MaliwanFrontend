@@ -1,5 +1,6 @@
 const USER_ROLES = {
 	ADMIN: "Admin",
+	// CUSTOMER: "Customer"
 };
 
 const requireAll = (...roles) => {

@@ -2,7 +2,7 @@
     height: auto;
     min-width: 300px;
     border-right: 1px solid var(--mwColor1);
-    color: var(--mwText1);
+    color: var(--mwText4);
     margin: 1rem 0;
     background-color: var(--mwBackground1);
 }

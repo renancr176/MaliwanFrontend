@@ -1,6 +1,61 @@
 {
     "home": "Home",
     "admin": {
-        "index": "Admin"
+        "index": "Admin",
+        "brands": {
+            "index": "Marcas",
+            "add": "Adicionar Marca",
+            "edit": "Alterar Marca"
+        },
+        "categories": {
+            "index": "Categorias",
+            "add": "Adicionar Categoria",
+            "edit": "Alterar Categoria"
+        },
+        "customers": {
+            "index": "Clientes",
+            "add": "Adicionar Cliente",
+            "edit": "Alterar Cliente"
+        },
+        "genders": {
+            "index": "Gêneros",
+            "add": "Adicionar Gênero",
+            "edit": "Alterar Gênero"
+        },
+        "orders": {
+            "index": "Pedidos",
+            "add": "Adicionar Pedido",
+            "edit": "Alterar Pedido"
+        },
+        "paymentMethods": {
+            "index": "Formas de Pagamento",
+            "add": "Adicionar forma de pagamento",
+            "edit": "Alterar forma de pagamento"
+        },
+        "products": {
+            "index": "Produtos",
+            "add": "Adicionar Produto",
+            "edit": "Alterar Produto"
+        },
+        "productColors": {
+            "index": "Cores de Produto",
+            "add": "Adicionar Cor de Produto",
+            "edit": "Alterar Cor de Produto"
+        },
+        "productSizes": {
+            "index": "Tamanhos de Produto",
+            "add": "Adicionar Tamanho de Produto",
+            "edit": "Alterar Tamanho de Produto"
+        },
+        "stocks": {
+            "index": "Estoques",
+            "add": "Adicionar Estoque",
+            "edit": "Alterar Estoque"
+        },
+        "subcategories": {
+            "index": "Subcategorias",
+            "add": "Adicionar Subcategoria",
+            "edit": "Alterar Subcategoria"
+        }
     }
 }

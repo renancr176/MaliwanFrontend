@@ -2,14 +2,27 @@
 
 :root {
 	--mw-dark: #31353b;
-	--mw-red: #ca1c2a;
+	--mw-red: #DC3545;
 	--mw-light-red: #f6dcde;
-	--mw-blue: #0b5b98;
-	--mw-dark-blue: #003b71;
+	--mw-blue: #0D6EFD;
+	--mw-dark-blue: #0D6EFD;
 	--mw-light-blue: #d9e6ef;
 	--mw-font1: 'Roboto', sans-serif;
 	--mw-font2: 'Roboto', sans-serif;
 	--mw-font3: 'Roboto', sans-serif;
+
+	/* --mwColor1: #712cf9;
+    --mwColor2: #0D6EFD;
+    --mwColor3: #31353b;
+    --mwBackground1: #fff;
+    --mwBackground2: #712cf9;
+    --mwBackground3: #31353b;
+    --mwBackground4: #0D6EFD;
+    --mwBackground5: #002b61;
+    --mwText1: #31353b;
+    --mwText2: #fafafa;
+    --mwText3: #712cf9;
+    --mwText4: #0D6EFD; */
 }
 
 * {

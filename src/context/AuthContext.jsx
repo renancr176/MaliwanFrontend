@@ -7,84 +7,99 @@ import { USER_ROLES, verifyRoles } from "../utils/userRoles";
 export const AuthContext = createContext();
 
 export function AuthProvider({ children }) {
-	const [user, setUser] = useState(null);
-	const [isLoading, setIsLoading] = useState(true);
-	const location = useLocation();
+  const [user, setUser] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
+  const location = useLocation();
 
-	useEffect(() => {
-		const token = Cookies.get("token");
-		const userJson = Cookies.get("user");
-		if (token && userJson) setUser(JSON.parse(userJson));
-		setIsLoading(false);
-	}, []);
+  useEffect(() => {
+    const refreshRequest = Cookies.get("refreshRequest");
+    const userJson = Cookies.get("user");
+    if (refreshRequest && userJson) setUser(JSON.parse(userJson));
+    setIsLoading(false);
+  }, []);
 
-	useEffect(() => {
-		const tokenCookie = Cookies.get("token");
-		if (user && !tokenCookie) setUser(null);
-	}, [location, user]);
+  useEffect(() => {
+    const tokenCookie = Cookies.get("accessToken");
+    if (user && !tokenCookie) setUser(null);
+  }, [location, user]);
 
-	const signIn = (user, token, expiresIn) => {
-		setIsLoading(true);
-		let userObj;
-		try {
-			const expiresInDays = expiresIn / 24 / 60 / 60;
-			Cookies.set("token", token, { expires: expiresInDays });
+  const signIn = (
+    user,
+    accessToken,
+    expiresIn,
+    refreshToken,
+    refreshTokenExpiresIn
+  ) => {
+    setIsLoading(true);
+    let userObj;
+    try {
+      const expiresInDays = expiresIn / 24 / 60 / 60;
+      Cookies.set("accessToken", accessToken, { expires: expiresInDays });
+      const refreshTokenExpiresInDays = refreshTokenExpiresIn / 24 / 60 / 60;
+      Cookies.set(
+        "refreshRequest",
+        JSON.stringify({ accessToken, refreshToken }),
+        { expires: refreshTokenExpiresInDays }
+      );
 
-			const roles = getRoles(token);
+      const roles = getRoles(accessToken);
 
-			userObj = { ...user, roles };
-			Cookies.set("user", JSON.stringify(userObj), { expires: expiresInDays });
-			setUser(userObj);
-		} catch (error) {
-			console.error(error);
-			userObj = null;
-			throw new Error("Oooops!");
-		} finally {
-			setIsLoading(false);
-			return userObj;
-		}
-	};
+      userObj = { ...user, roles };
+      Cookies.set("user", JSON.stringify(userObj), {
+        expires: refreshTokenExpiresInDays,
+      });
+      setUser(userObj);
+    } catch (error) {
+      console.error(error);
+      userObj = null;
+      throw new Error("Oooops!");
+    } finally {
+      setIsLoading(false);
+      return userObj;
+    }
+  };
 
-	const getRoles = (token) => {
-		const tokenDecoded = jwtDecode(token);
-		return typeof tokenDecoded.roles === "string"
-			? [tokenDecoded.roles]
-			: tokenDecoded.roles;
-	};
+  const getRoles = (token) => {
+    const tokenDecoded = jwtDecode(token);
+    return typeof tokenDecoded.roles === "string"
+      ? [tokenDecoded.roles]
+      : tokenDecoded.roles;
+  };
 
-	const signOut = () => {
-		setUser(null);
-		Cookies.remove("token");
-		Cookies.remove("user");
-	};
+  const signOut = () => {
+    setUser(null);
+    Cookies.remove("accessToken");
+    Cookies.remove("refreshRequest");
+    Cookies.remove("user");
+  };
 
-	const isAuthenticated = user && Cookies.get("token");
+  const isAuthenticated = user && Cookies.get("refreshRequest");
 
-	const hasRoles = (roles) => {
-		return verifyRoles(roles, user?.roles ?? "");
-	};
+  const hasRoles = (roles) => {
+    let userObj = Cookies.get("user") ? JSON.parse(Cookies.get("user")) : user;
+    return verifyRoles(roles, userObj?.roles ?? "");
+  };
 
-	const getUserAreaPath = () => {
-		if (!user) return "/";
-		if (hasRoles([USER_ROLES.ADMIN])) return "/admin/orders";
-		if (hasRoles([USER_ROLES.SELLER])) return "/admin/orders";
-		if (hasRoles([USER_ROLES.CUSTOMER])) return "/account/orders";
-		return "/";
-	};
+  const getUserAreaPath = () => {
+    let userObj = Cookies.get("user") ? JSON.parse(Cookies.get("user")) : user;
+    if (!userObj) return "/";
+    if (hasRoles([USER_ROLES.ADMIN])) return "/admin";
+    return "/";
+  };
 
-	return (
-		<AuthContext.Provider
-			value={{
-				user,
-				signIn,
-				signOut,
-				isAuthenticated,
-				isLoading,
-				hasRoles,
-				getUserAreaPath,
-			}}
-		>
-			{children}
-		</AuthContext.Provider>
-	);
+  return (
+    <AuthContext.Provider
+      value={{
+        user,
+        signIn,
+        signOut,
+        isAuthenticated,
+        isLoading,
+        hasRoles,
+        getUserAreaPath,
+      }}
+    >
+      {children}
+    </AuthContext.Provider>
+  );
 }

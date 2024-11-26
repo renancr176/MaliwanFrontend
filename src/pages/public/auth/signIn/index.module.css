@@ -18,7 +18,7 @@
 .leftBar{
     height: 100vh;
     width: 70px;
-    background-color: var(--mw-blue);
+    background-color: var(--mwBackground2);
     filter: brightness(90%);
     position: relative;
 }

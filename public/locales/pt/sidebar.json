@@ -7,18 +7,15 @@
     },
     "admin":{
         "main" : "Início",
-        "products": "Produtos",
-        "paymentMethods": "Formas de Pagamento",
+        "brands": "Marcas",
+        "categories": "Categorias",
         "customers": "Clientes",
-        "users": {
-            "title": "Usuários",
-            "admin": "Administração de Usuários"
-        },
-        "queries": {
-            "title": "Consultas",
-            "invoiceReport": "Relatório de Faturas e Históricos"
-        },
+        "genders": "Gêneros",
         "orders": "Pedidos",
-        "catalogs": "Catalogos"
+        "paymentMethods": "Formas de Pagamento",
+        "products": "Produtos",
+        "productColors": "Cores de Produto",
+        "productSizes": "Tamanhos de Produto",
+        "stocks": "Estoques"
     }
 }

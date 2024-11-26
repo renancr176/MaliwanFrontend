@@ -12,7 +12,7 @@
     border: none;
     background: transparent;
     font-weight: bolder;
-    color: var(--mwText4);
+    color: var(--mwText1);
 }
 
 .menuButton:hover {

@@ -9,7 +9,7 @@
 }
 
 .headerTop a:hover {
-    color: var(--mwColor2);
+    color: var(--mwText1);
     transition:linear 5s ease-in-out;
 }
 

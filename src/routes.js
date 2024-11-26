@@ -4,7 +4,52 @@ import { USER_ROLES, requireAll } from "./utils/userRoles";
 import RequiredAuth from "./utils/requiredAuth";
 
 //#region Admin Pages
-import Admin from "./pages/admin";
+import AdminPage from "./pages/admin";
+
+import AdminBrands from './pages/admin/brands';
+import AdminAddBrand from './pages/admin/brands/add';
+import AdminEditBrand from './pages/admin/brands/edit';
+
+import AdminCategories from './pages/admin/categories';
+import AdminAddCategory from './pages/admin/categories/add';
+import AdminEditCategory from './pages/admin/categories/edit';
+
+import AdminCustomers from './pages/admin/customers';
+import AdminAddCustomer from './pages/admin/customers/add';
+import AdminEditCustomer from './pages/admin/customers/edit';
+
+import AdminGenders from './pages/admin/genders';
+import AdminAddGender from './pages/admin/genders/add';
+import AdminEditGender from './pages/admin/genders/edit';
+
+import AdminOrdes from './pages/admin/orders';
+import AdminAddOrder from './pages/admin/orders/add';
+import AdminEditOrder from './pages/admin/orders/edit';
+
+import AdminPaymentMethods from './pages/admin/paymentMethods';
+import AdminAddPaymentMethod from './pages/admin/paymentMethods/add';
+import AdminEditPaymentMethod from './pages/admin/paymentMethods/edit';
+
+import AdminProducts from './pages/admin/products';
+import AdminAddProduct from './pages/admin/products/add';
+import AdminEditProduct from './pages/admin/products/edit';
+
+import AdminProductColors from './pages/admin/productColors';
+import AdminAddProductColor from './pages/admin/productColors/add';
+import AdminEditProductColor from './pages/admin/productColors/edit';
+
+import AdminProductSizes from './pages/admin/productSizes';
+import AdminAddProductSize from './pages/admin/productSizes/add';
+import AdminEditProductSize from './pages/admin/productSizes/edit';
+
+import AdminStocks from './pages/admin/stocks';
+import AdminAddStock from './pages/admin/stocks/add';
+import AdminEditStock from './pages/admin/stocks/edit';
+
+import AdminSubcategories from './pages/admin/subcategories';
+import AdminAddSubcategory from './pages/admin/subcategories/add';
+import AdminEditSubcategory from './pages/admin/subcategories/edit';
+
 //#endregion
 
 //#region Customer Pages
@@ -82,6 +127,241 @@ const PageRoutes = [
 					// },
 				],
 			},
+			
+			//#region Admin Pages
+			{
+				roles: [USER_ROLES.ADMIN],
+				path: "admin",
+				name: "admin.index",
+				pageSettings: {
+					sidebar: true,
+				},
+				element: <AdminPage />,
+				children: [
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "brands",
+						name: "admin.brands.index",
+						element: <AdminBrands />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.brands.add",
+								element: <AdminAddBrand />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.brands.edit",
+								element: <AdminEditBrand />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "c",
+						name: "admin.categories.index",
+						element: <AdminCategories />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.categories.add",
+								element: <AdminAddCategory />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.categories.edit",
+								element: <AdminEditCategory />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "customers",
+						name: "admin.customers.index",
+						element: <AdminCustomers />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.customers.add",
+								element: <AdminAddCustomer />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.customers.edit",
+								element: <AdminEditCustomer />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "genders",
+						name: "admin.genders.index",
+						element: <AdminGenders />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.genders.add",
+								element: <AdminAddGender />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.genders.edit",
+								element: <AdminEditGender />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "orders",
+						name: "admin.orders.index",
+						element: <AdminOrdes />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.orders.add",
+								element: <AdminAddOrder />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.orders.edit",
+								element: <AdminEditOrder />
+							},
+						]
+					},
+					{
+						roles: [USER_ROLES.ADMIN],
+						path: "payment-methods",
+						name: "admin.paymentMethods.index",
+						element: <AdminPaymentMethods />,
+						children: [
+							{
+								roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.paymentMethods.add",
+								element: <AdminAddPaymentMethod />
+							},
+							{
+								roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.paymentMethods.edit",
+								element: <AdminEditPaymentMethod />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "products",
+						name: "admin.products.index",
+						element: <AdminProducts />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.products.add",
+								element: <AdminAddProduct />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.products.edit",
+								element: <AdminEditProduct />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "productColors",
+						name: "admin.productColors.index",
+						element: <AdminProductColors />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.productColors.add",
+								element: <AdminAddProductColor />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.productColors.edit",
+								element: <AdminEditProductColor />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "productSizes",
+						name: "admin.productSizes.index",
+						element: <AdminProductSizes />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.productSizes.add",
+								element: <AdminAddProductSize />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.productSizes.edit",
+								element: <AdminEditProductSize />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "stocks",
+						name: "admin.stocks.index",
+						element: <AdminStocks />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.stocks.add",
+								element: <AdminAddStock />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.stocks.edit",
+								element: <AdminEditStock />
+							},
+						]
+					},
+					{
+						// roles: [USER_ROLES.ADMIN],
+						path: "categories/:idCategory/subcategories",
+						name: "admin.subcategories.index",
+						element: <AdminSubcategories />,
+						children: [
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "add",
+								name: "admin.subcategories.add",
+								element: <AdminAddSubcategory />
+							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: "edit/:id",
+								name: "admin.subcategories.edit",
+								element: <AdminEditSubcategory />
+							},
+						]
+					},
+				],
+			},
+			//#endregion
+			
 			//#region Customer Pages
 			// {
 			// 	roles: [USER_ROLES.CUSTOMER],
@@ -131,93 +411,7 @@ const PageRoutes = [
 			// 	],
 			// },
 			//#endregion
-			//#region Admin Pages
-			{
-				roles: [USER_ROLES.ADMIN],
-				path: "admin",
-				name: "admin.index",
-				pageSettings: {
-					sidebar: true,
-				},
-				element: <Admin />,
-				// children: [
-				// 	{
-				// 		path: "orders",
-				// 		name: "admin.orders",
-				// 		element: <AdminOrders />,
-				// 	},
-				// 	{
-				// 		path: "products",
-				// 		name: "admin.products",
-				// 		element: <AdminProducts />,
-				// 		children: [
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: "add",
-				// 				name: "admin.productAdd",
-				// 				element: <AdminAddProduct />
-				// 			},
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: ":id",
-				// 				name: "admin.productEdit",
-				// 				element: <AdminEditProduct />
-				// 			},
-				// 		]
-				// 	},
-				// 	{
-				// 		roles: [USER_ROLES.ADMIN],
-				// 		path: "payments",
-				// 		name: "admin.payments",
-				// 		element: <AdminPaymentMethodsPage />,
-				// 		children: [
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: "add",
-				// 				name: "admin.paymentsAdd",
-				// 				element: <AdminAddPayment />
-				// 			},
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: ":id",
-				// 				name: "admin.paymentsEdit",
-				// 				element: <AdminEditPayment />
-				// 			},
-				// 		]
-				// 	},
-				// 	{
-				// 		path: "users",
-				// 		name: "admin.users",
-				// 		roles: [USER_ROLES.ADMIN],
-				// 		element: <AdminUsers />,
-				// 	},
-				// 	{
-				// 		path: "customers",
-				// 		name: "admin.customers",
-				// 		element: <AdminCustomers />,
-				// 		children: [
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: "add",
-				// 				name: "admin.customerAdd",
-				// 				element: <AdminAddCustomer />
-				// 			},
-				// 			{
-				// 				roles: [USER_ROLES.ADMIN],
-				// 				path: ":id",
-				// 				name: "admin.customerEdit",
-				// 				element: <AdminEditCustomer />
-				// 			},
-				// 		]
-				// 	},
-				// 	{
-				// 		path: "reports/invoices",
-				// 		name: "admin.reports.invoices",
-				// 		element: <ReportInvoice />
-				// 	},
-				// ],
-			},
-			//#endregion
+
 			// TODO: Remover Exemplo =====>
 			// {
 			// 	path: "MultipleRoles",
