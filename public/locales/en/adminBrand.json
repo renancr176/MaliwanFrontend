@@ -1,0 +1,42 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "sku": "SKU",
+                "active": "Active",
+                "edit": "Edit"
+            },
+            "body": {
+                "active": {
+                    "true": "Yes",
+                    "false": "No"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Brand",
+        "fieldLabelName": "Name",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Brand",
+        "success": "Brand registered successfully"
+    },
+    "edit": {
+        "title": "Edit Brand",
+        "success": "Brand updated successfully"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Active",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        }
+    }
+}

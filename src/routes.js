@@ -160,7 +160,7 @@ const PageRoutes = [
 					},
 					{
 						// roles: [USER_ROLES.ADMIN],
-						path: "c",
+						path: "categories",
 						name: "admin.categories.index",
 						element: <AdminCategories />,
 						children: [

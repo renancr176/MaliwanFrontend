@@ -1,0 +1,42 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "sku": "SKU",
+                "active": "Ativo",
+                "edit": "Alterar"
+            },
+            "body": {
+                "active": {
+                    "true": "Sim",
+                    "false": "Não"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Marca",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Marca",
+        "success": "Marca cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Marca",
+        "success": "Marca alterada com sucesso"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}

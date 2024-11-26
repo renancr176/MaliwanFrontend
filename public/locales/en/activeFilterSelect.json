@@ -1,0 +1,8 @@
+{
+    "label": "Active",
+    "values": {
+        "undefined": "No Filter",
+        "true": "Yes",
+        "false": "No"
+    }
+}

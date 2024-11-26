@@ -3,7 +3,7 @@ import useAlert from "./alert";
 
 export default function usePagination(
 	request,
-	intialPageSize = 10,
+	intialPageSize = process.env.REACT_APP_PAGE_SIZE,
 	initialFilter = {}
 ) {
 	const [requestParams, setRequestParams] = useState({
@@ -21,9 +21,9 @@ export default function usePagination(
 	const fetchData = useCallback(async () => {
 		try {
 			const response = await request(requestParams);
-			setData(response.data);
-			setTotalCount(response.totalCount);
-			setTotalPages(response.totalPages);
+			setData(response.data.data);
+			setTotalCount(response.data.totalCount);
+			setTotalPages(response.data.totalPages);
 		} catch (error) {
 			fireRequestError(error);
 		}

@@ -9,7 +9,6 @@ import { AuthContext } from "../../../../context/AuthContext";
 import useAlert from "../../../../hooks/alert";
 import { useCart } from "../../../../hooks/cart";
 import { signInRequest } from "../../../../services/userService";
-import { USER_ROLES, verifyRoles } from "../../../../utils/userRoles";
 import styles from "./index.module.css";
 
 export default function SignIn() {
@@ -28,6 +27,7 @@ export default function SignIn() {
   };
 
   const handleSubmitThis = (values) => {
+    signOut();
     setSubmiting(true);
 
     signInRequest(values)
