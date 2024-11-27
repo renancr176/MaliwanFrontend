@@ -27,7 +27,8 @@
     },
     "edit": {
         "title": "Alterar Marca",
-        "success": "Marca alterada com sucesso"
+        "success": "Marca alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
     },
     "form": {
         "fieldNameLabel": "Nome",

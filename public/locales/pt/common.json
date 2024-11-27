@@ -2,5 +2,10 @@
     "optional": "Opcional",
     "Error": "Erro",
     "UnexpectedError": "Erro Inesperado",
-    "Success": "Sucesso"
+    "Success": "Sucesso",
+    "confirm": {
+        "title": "Confirmação",
+        "confirmButtonText": "Ok",
+        "cancelButtonText": "Cancelar"
+    }
 }

@@ -9,7 +9,7 @@ import Spinner from "../../../components/elements/spinner";
 
 export default function AdminEditBrand() {
   const { id } = useParams();
-  const { fireSuccess, fireRequestError } = useAlert();
+  const { fireSuccess, fireRequestError, fireConfirm } = useAlert();
   const navigate = useNavigate();
   const { t } = useTranslation("adminBrand", { keyPrefix: "edit" });
   const [data, setData] = useState();
@@ -30,7 +30,10 @@ export default function AdminEditBrand() {
 			});
 	}, [id]);
 
-  const handleSubmit = (values) => {
+  const handleSubmit = async (values) => {
+    if (!await fireConfirm(t('confirm')))
+      return;
+
     return updateBrand(values)
       .then(({ data }) => {
         fireSuccess(t("success"));
