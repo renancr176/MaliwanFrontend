@@ -1,0 +1,42 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "active": "Ativo",
+                "edit": "Alterar"
+            },
+            "body": {
+                "active": {
+                    "true": "Sim",
+                    "false": "Não"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Categoria",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Categoria",
+        "success": "Categoria cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Categoria",
+        "success": "Categoria alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}

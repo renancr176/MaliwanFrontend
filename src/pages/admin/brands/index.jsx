@@ -46,7 +46,7 @@ export default function AdminBrands() {
       <hr/>
       <Row>
         <Col>
-          <Table responsive striped>
+          <Table responsive="sm" striped>
             <thead>
               <tr>
                 <th style={{ width: "10%" }}>#</th>

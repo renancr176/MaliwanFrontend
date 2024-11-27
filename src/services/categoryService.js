@@ -6,12 +6,12 @@ export async function getCategoryById(id) {
     return data;
 }
 
-export async function getAllCategorys() {
+export async function getAllCategories() {
     const {data} = await api.get('/Category');
     return data;
 }
 
-export async function searchCategorys(searchParams) {
+export async function searchCategories(searchParams) {
     const {data} = await api.get('/Category/Search', { params: searchParams });
     return data;
 }

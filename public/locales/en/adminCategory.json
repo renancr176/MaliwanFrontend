@@ -1,0 +1,41 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "active": "Active",
+                "edit": "Edit"
+            },
+            "body": {
+                "active": {
+                    "true": "Yes",
+                    "false": "No"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Category",
+        "fieldLabelName": "Name",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Category",
+        "success": "Category registered successfully"
+    },
+    "edit": {
+        "title": "Edit Category",
+        "success": "Category updated successfully"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Active",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        }
+    }
+}

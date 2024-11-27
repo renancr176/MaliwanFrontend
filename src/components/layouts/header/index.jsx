@@ -76,7 +76,7 @@ export default function Header() {
 			</div>
 			<Navbar
 				expand="lg"
-				sticky="top"
+				// sticky="top"
 				className={styles.headerMain}
 				style={{ padding: "1.5rem 0", borderBottom: borderStyle }}
 			>
