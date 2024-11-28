@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Formik } from "formik";
 import * as yup from "yup";
@@ -15,13 +15,8 @@ export default function AdminBrandForm({
     active: true,
   },
 }) {
-  const navigate = useNavigate();
   const { t } = useTranslation("adminBrand", { keyPrefix: "form" });
   const [submitting, setSubmitting] = useState(false);
-
-  const goBack = () => {
-    navigate("../");
-  }
 
   const handleSubmitThis = (values) => {
     setSubmitting(true);
@@ -107,13 +102,12 @@ export default function AdminBrandForm({
           <Row className="mt-4">
             <Col className="d-grid gap-2">
               <ButtonGroup>
-                <Button 
-                  type="button"
-                  variant="secondary"
-                  onClick={goBack}>
+                <Link 
+                  className="btn btn-secondary"
+                  to={"../"}>
                   <IoReturnUpBackOutline />
                   {" "}{t(`labelBtnGoBack`)}
-                </Button> 
+                </Link> 
                 <Button
                   type="submit"
                   variant={!data?.id ? "success" : "warning"}
