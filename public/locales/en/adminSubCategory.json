@@ -1,10 +1,10 @@
 {
     "index": {
         "labelBtnEdit": "Edit",
-        "labelBtnSubcategory": "View Subcategories",
         "table": {
             "header": {
                 "name": "Name",
+                "sku": "SKU",
                 "active": "Active",
                 "edit": "Edit"
             },
@@ -17,17 +17,17 @@
         }
     },
     "filter": {
-        "labelBtnAdd": "Add Category",
+        "labelBtnAdd": "Add Subcategory",
         "fieldLabelName": "Name",
         "submitLabel": "Filter"
     },
     "add": {
-        "title": "Add Category",
-        "success": "Category registered successfully"
+        "title": "Add Subcategory",
+        "success": "Subcategory registered successfully"
     },
     "edit": {
-        "title": "Edit Category",
-        "success": "Category updated successfully"
+        "title": "Edit Subcategory",
+        "success": "Subcategory updated successfully"
     },
     "form": {
         "fieldNameLabel": "Nome",

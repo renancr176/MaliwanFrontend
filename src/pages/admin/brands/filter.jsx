@@ -57,7 +57,7 @@ export default function AdminBrandFilters({ setFilter, isLoading }) {
               {hasRoles([USER_ROLES.ADMIN]) ? (
                 <Link
                   to="add"
-                  className="btn btn-success ms-3"
+                  className="btn btn-success ms-4"
                 >
                   <FaPlus />
                   {"  "}

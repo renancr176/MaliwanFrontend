@@ -3,12 +3,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useAlert from "../../../hooks/alert";
 import { Container } from "react-bootstrap";
-import { getCategoryById, updateCategory } from "../../../services/categoryService";
+import useCategoryService from "../../../services/categoryService";
 import AdminBrandForm from "./form";
 import Spinner from "../../../components/elements/spinner";
 
 export default function AdminEditCategory() {
   const { id } = useParams();
+  const { getCategoryById, updateCategory } = useCategoryService();
   const { fireSuccess, fireRequestError, fireConfirm } = useAlert();
   const navigate = useNavigate();
   const { t } = useTranslation("adminCategory", { keyPrefix: "edit" });

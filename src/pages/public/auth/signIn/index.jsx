@@ -8,11 +8,12 @@ import * as yup from "yup";
 import { AuthContext } from "../../../../context/AuthContext";
 import useAlert from "../../../../hooks/alert";
 import { useCart } from "../../../../hooks/cart";
-import { signInRequest } from "../../../../services/userService";
+import useUserService from "../../../../services/userService";
 import styles from "./index.module.css";
 
 export default function SignIn() {
   const [submiting, setSubmiting] = useState(false);
+  const { signInRequest } = useUserService();
 
   const navigate = useNavigate();
   const { signIn, getUserAreaPath, signOut } = useContext(AuthContext);

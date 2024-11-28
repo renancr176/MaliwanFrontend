@@ -9,8 +9,8 @@ import { FaSpinner, FaFilter, FaPlus } from "react-icons/fa";
 import ActiveFilterSelect from "../../../components/activeFilterSelect";
 import FilterControlCleanable from "../../../components/filterControlCleanable";
 
-export default function AdminFilterCategory({ setFilter, isLoading }) {
-  const { t } = useTranslation("adminCategory", { keyPrefix: "filter" });
+export default function AdminFilterSubcategory({ setFilter, isLoading }) {
+  const { t } = useTranslation("adminSubCategory", { keyPrefix: "filter" });
 
   const { hasRoles } = useAuth();
   const form = {
@@ -23,7 +23,6 @@ export default function AdminFilterCategory({ setFilter, isLoading }) {
       ...values,
     });
   };
-
   return (
     <Formik
       enableReinitialize={true}
@@ -39,7 +38,7 @@ export default function AdminFilterCategory({ setFilter, isLoading }) {
               name="name"
               value={values.name}
               onChange={(e) => handleChange(e)}
-              onClear={() => setValues({...values, name: undefined})}
+              onClear={() => setValues({ ...values, name: undefined })}
             />
             <ActiveFilterSelect value={values.active} onChange={handleChange} />
           </Row>
@@ -55,10 +54,7 @@ export default function AdminFilterCategory({ setFilter, isLoading }) {
                 {t("submitLabel")}
               </Button>
               {hasRoles([USER_ROLES.ADMIN]) ? (
-                <Link
-                  to="add"
-                  className="btn btn-success ms-4"
-                >
+                <Link to="add" className="btn btn-success ms-4">
                   <FaPlus />
                   {"  "}
                   {t("labelBtnAdd")}
@@ -69,5 +65,5 @@ export default function AdminFilterCategory({ setFilter, isLoading }) {
         </Form>
       )}
     </Formik>
-  )
+  );
 }

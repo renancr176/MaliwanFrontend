@@ -3,13 +3,14 @@ import { useParams, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useAlert from "../../../hooks/alert";
 import { Container } from "react-bootstrap";
-import { getBrandById, updateBrand } from "../../../services/brandService";
+import useBrandService from "../../../services/brandService";
 import AdminBrandForm from "./form";
 import Spinner from "../../../components/elements/spinner";
 
 export default function AdminEditBrand() {
   const { id } = useParams();
   const { fireSuccess, fireRequestError, fireConfirm } = useAlert();
+  const { getBrandById, updateBrand } = useBrandService();
   const navigate = useNavigate();
   const { t } = useTranslation("adminBrand", { keyPrefix: "edit" });
   const [data, setData] = useState();

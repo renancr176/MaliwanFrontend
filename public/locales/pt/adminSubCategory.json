@@ -1,10 +1,10 @@
 {
     "index": {
         "labelBtnEdit": "Alterar",
-        "labelBtnSubcategory": "Ver Subcategorias",
         "table": {
             "header": {
                 "name": "Nome",
+                "sku": "SKU",
                 "active": "Ativo",
                 "edit": "Alterar"
             },
@@ -17,17 +17,17 @@
         }
     },
     "filter": {
-        "labelBtnAdd": "Adicionar Categoria",
+        "labelBtnAdd": "Adicionar Subcategoria",
         "fieldLabelName": "Nome",
         "submitLabel": "Filtrar"
     },
     "add": {
-        "title": "Adicionar Categoria",
-        "success": "Categoria cadastrada com sucesso"
+        "title": "Adicionar Subcategoria",
+        "success": "Subcategoria cadastrada com sucesso"
     },
     "edit": {
-        "title": "Alterar Categoria",
-        "success": "Categoria alterada com sucesso",
+        "title": "Alterar Subcategoria",
+        "success": "Subcategoria alterada com sucesso",
         "confirm": "Tem certeza que deseja salvar as alterações?"
     },
     "form": {

@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Spinner from "../../../components/elements/spinner";
 import PaginationMenu from "../../../components/paginationMenu";
@@ -11,17 +10,17 @@ import {
   Row,
   Badge,
   ButtonGroup,
-  Button,
 } from "react-bootstrap";
-import { FaRegEdit } from "react-icons/fa";
+import { FaRegEdit, FaEye } from "react-icons/fa";
 import { USER_ROLES } from "../../../utils/userRoles";
 import { useAuth } from "../../../hooks/auth";
-import { searchCategories } from "../../../services/categoryService";
+import useCategoryService from "../../../services/categoryService";
 import AdminFilterCategory from "./filter";
+import LinkTooltip from "../../../components/linkTooltip";
 
 export default function AdminCategories() {
-  const navigate = useNavigate();
   const { t } = useTranslation("adminCategory", { keyPrefix: "index" });
+  const { searchCategories } = useCategoryService();
   const { hasRoles } = useAuth();
   const {
     data: pageData,
@@ -34,16 +33,12 @@ export default function AdminCategories() {
     setFilter,
   } = usePagination(searchCategories);
 
-  const goToEdit = (id) => {
-    navigate(`edit/${id}`);
-  };
-
   return (
     <Container fluid>
       <Row>
-        <AdminFilterCategory setFilter={setFilter} isLoading={isLoading}/>
+        <AdminFilterCategory setFilter={setFilter} isLoading={isLoading} />
       </Row>
-      <hr/>
+      <hr />
       <Row>
         <Col>
           <Table responsive="sm" striped>
@@ -71,13 +66,23 @@ export default function AdminCategories() {
                     <td>
                       {hasRoles([USER_ROLES.ADMIN]) && (
                         <ButtonGroup>
-                          <Button
-                            onClick={() => goToEdit(item.id)}
+                          <LinkTooltip
                             variant="warning"
+                            placement="left"
                             title={t("labelBtnEdit")}
+                            to={`edit/${item.id}`}
+                            className="btn btn-warning"
                           >
                             <FaRegEdit />
-                          </Button>
+                          </LinkTooltip>
+                          <LinkTooltip
+                            placement="left"
+                            title={t("labelBtnSubcategory")}
+                            to={`${item.id}/subcategories`}
+                            className="btn btn-primary"
+                          >
+                            <FaEye />
+                          </LinkTooltip>
                         </ButtonGroup>
                       )}
                     </td>
@@ -97,5 +102,5 @@ export default function AdminCategories() {
         </Col>
       </Row>
     </Container>
-  )
+  );
 }

@@ -34,7 +34,7 @@ export default function usePagination(
 		fetchData().finally(() => {
 			setIsLoading(false);
 		});
-	}, [fetchData]);
+	}, [requestParams]);
 
 	const nextPage = () => {
 		setRequestParams((state) => ({

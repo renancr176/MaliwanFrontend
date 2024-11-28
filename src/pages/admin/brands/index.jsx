@@ -1,5 +1,4 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import Spinner from "../../../components/elements/spinner";
 import PaginationMenu from "../../../components/paginationMenu";
@@ -11,17 +10,17 @@ import {
   Row,
   Badge,
   ButtonGroup,
-  Button,
 } from "react-bootstrap";
 import { FaRegEdit } from "react-icons/fa";
 import { USER_ROLES } from "../../../utils/userRoles";
 import { useAuth } from "../../../hooks/auth";
-import { searchBrands } from "../../../services/brandService";
+import useBrandService from "../../../services/brandService";
 import AdminBrandFilters from "./filter";
+import LinkTooltip from "../../../components/linkTooltip";
 
 export default function AdminBrands() {
-  const navigate = useNavigate();
   const { t } = useTranslation("adminBrand", { keyPrefix: "index" });
+  const { searchBrands } = useBrandService();
   const { hasRoles } = useAuth();
   const {
     data: pageData,
@@ -33,10 +32,6 @@ export default function AdminBrands() {
     isLoading,
     setFilter,
   } = usePagination(searchBrands);
-
-  const goToEdit = (id) => {
-    navigate(`edit/${id}`);
-  };
 
   return (
     <Container fluid>
@@ -73,13 +68,15 @@ export default function AdminBrands() {
                     <td>
                       {hasRoles([USER_ROLES.ADMIN]) && (
                         <ButtonGroup>
-                          <Button
-                            onClick={() => goToEdit(item.id)}
+                          <LinkTooltip
                             variant="warning"
+                            placement="left"
                             title={t("labelBtnEdit")}
+                            to={`edit/${item.id}`}
+                            className="btn btn-warning"
                           >
                             <FaRegEdit />
-                          </Button>
+                          </LinkTooltip>
                         </ButtonGroup>
                       )}
                     </td>

@@ -3,11 +3,12 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useAlert from "../../../hooks/alert";
 import { Container } from "react-bootstrap";
-import { createCategory } from "../../../services/categoryService";
+import useCategoryService from "../../../services/categoryService";
 import AdminCategoryForm from "./form";
 
 export default function AdminAddCategory() {
   const { fireSuccess, fireRequestError } = useAlert();
+  const { createCategory } = useCategoryService();
   const navigate = useNavigate();
   const { t } = useTranslation("adminCategory", { keyPrefix: "add" });
 

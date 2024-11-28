@@ -176,6 +176,26 @@ const PageRoutes = [
 								name: "admin.categories.edit",
 								element: <AdminEditCategory />
 							},
+							{
+								// roles: [USER_ROLES.ADMIN],
+								path: ":idCategory/subcategories",
+								name: "admin.subcategories.index",
+								element: <AdminSubcategories />,
+								children: [
+									{
+										// roles: [USER_ROLES.ADMIN],
+										path: "add",
+										name: "admin.subcategories.add",
+										element: <AdminAddSubcategory />
+									},
+									{
+										// roles: [USER_ROLES.ADMIN],
+										path: "edit/:id",
+										name: "admin.subcategories.edit",
+										element: <AdminEditSubcategory />
+									},
+								]
+							},
 						]
 					},
 					{
@@ -335,26 +355,6 @@ const PageRoutes = [
 								path: "edit/:id",
 								name: "admin.stocks.edit",
 								element: <AdminEditStock />
-							},
-						]
-					},
-					{
-						// roles: [USER_ROLES.ADMIN],
-						path: "categories/:idCategory/subcategories",
-						name: "admin.subcategories.index",
-						element: <AdminSubcategories />,
-						children: [
-							{
-								// roles: [USER_ROLES.ADMIN],
-								path: "add",
-								name: "admin.subcategories.add",
-								element: <AdminAddSubcategory />
-							},
-							{
-								// roles: [USER_ROLES.ADMIN],
-								path: "edit/:id",
-								name: "admin.subcategories.edit",
-								element: <AdminEditSubcategory />
 							},
 						]
 					},
