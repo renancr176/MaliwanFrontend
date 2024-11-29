@@ -1,0 +1,42 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "active": "Ativo",
+                "actions": "Ações"
+            },
+            "body": {
+                "active": {
+                    "true": "Sim",
+                    "false": "Não"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Forma de Pagamento",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Forma de Pagamento",
+        "success": "Forma de Pagamento cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Forma de Pagamento",
+        "success": "Forma de Pagamento alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}
