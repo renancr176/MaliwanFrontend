@@ -1,0 +1,36 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "sku": "SKU",
+                "actions": "Ações"
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Gênero",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Gênero",
+        "success": "Gênero cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Gênero",
+        "success": "Gênero alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}

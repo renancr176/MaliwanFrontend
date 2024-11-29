@@ -1,0 +1,36 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "sku": "SKU",
+                "actions": "Actions"
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Gender",
+        "fieldLabelName": "Name",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Gender",
+        "success": "Gender registered successfully"
+    },
+    "edit": {
+        "title": "Edit Gender",
+        "success": "Gender updated successfully",
+        "confirm": "Are you sure you want to save changes?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Active",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        }
+    }
+}
