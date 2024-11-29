@@ -13,8 +13,13 @@ export default function useValidators() {
     return cnpj.isValid(num);
   };
 
+  const isHexColor = (color) => {
+    return /^#[0-9A-F]{6}[0-9a-f]{0,2}$/i.test(color);
+  };
+
   return {
     isCpf,
     isCnpj,
+    isHexColor,
   };
 }

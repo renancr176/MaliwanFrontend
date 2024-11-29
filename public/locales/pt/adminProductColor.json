@@ -1,0 +1,41 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "sku": "SKU",
+                "actions": "Ações"
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Cor de Produto",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Cor de Produto",
+        "success": "Cor de Produto cadastrado com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Cor de Produto",
+        "success": "Cor de Produto alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldBbgColor": "Cor de fundo",
+        "fieldtextColor": "Cor do texto",
+        "labelColor": "Cor do produto",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        },
+        "errors": {
+            "invalidColor": "Cor inválida."
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "sku": "SKU",
+                "actions": "Actions"
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Product Color",
+        "fieldLabelName": "Name",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Product Color",
+        "success": "Product Color registered successfully"
+    },
+    "edit": {
+        "title": "Edit Product Color",
+        "success": "Product Color updated successfully",
+        "confirm": "Are you sure you want to save changes?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldBbgColor": "Background color",
+        "fieldtextColor": "Text color",
+        "labelColor": "Product color",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        },
+        "errors": {
+            "invalidColor": "Invalid color"
+        }
+    }
+}
