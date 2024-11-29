@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useAlert from "../../../hooks/alert";
 import Spinner from "../../../components/elements/spinner";
@@ -20,6 +20,7 @@ import AdminFilterSubcategory from "./filter";
 import LinkTooltip from "../../../components/linkTooltip";
 import useCategoryService from "../../../services/categoryService";
 import useSubcategoryService from "../../../services/subcategoryService";
+import { IoReturnUpBackOutline } from "react-icons/io5";
 
 export default function AdminSubcategories() {
   const { idCategory } = useParams();
@@ -61,8 +62,10 @@ export default function AdminSubcategories() {
   return (
     <Container fluid>
       <Row>
-        <Col>
-          <h1 className="text-center">{category?.name}</h1>
+        <Col className="text-center">
+          <Link to={"../"} className="d-inline-block link-secondary link-underline-opacity-0">
+            <h1><Badge bg="secondary"><IoReturnUpBackOutline /></Badge> {t("labelCategory")}: {category?.name}</h1>
+          </Link>
         </Col>
       </Row>
       <hr/>
@@ -79,7 +82,7 @@ export default function AdminSubcategories() {
                 <th>{t("table.header.name")}</th>
                 <th style={{ width: "10%" }}>{t("table.header.sku")}</th>
                 <th style={{ width: "10%" }}>{t("table.header.active")}</th>
-                <th style={{ width: "10%" }}>{t("table.header.edit")}</th>
+                <th style={{ width: "10%" }}>{t("table.header.actions")}</th>
               </tr>
             </thead>
             <tbody>

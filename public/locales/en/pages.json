@@ -3,59 +3,59 @@
     "admin": {
         "index": "Admin",
         "brands": {
-            "index": "Brands",
-            "add": "Add Brand",
-            "edit": "Edit Brand"
+            "index": "Brand",
+            "add": "Add",
+            "edit": "Edit"
         },
         "categories": {
-            "index": "Categories",
-            "add": "Add Category",
-            "edit": "Edit Category"
+            "index": "Category",
+            "add": "Add",
+            "edit": "Edit"
         },
         "customers": {
-            "index": "Customers",
-            "add": "Add Customer",
-            "edit": "Edit Customer"
+            "index": "Customer",
+            "add": "Add",
+            "edit": "Edit"
         },
         "genders": {
-            "index": "Genders",
-            "add": "Add Gender",
-            "edit": "Edit Gender"
+            "index": "Gender",
+            "add": "Add",
+            "edit": "Edit"
         },
         "orders": {
-            "index": "Orders",
-            "add": "Add Order",
-            "edit": "Edit Order"
+            "index": "Order",
+            "add": "Add",
+            "edit": "Edit"
         },
         "paymentMethods": {
-            "index": "Payment Methods",
-            "add": "Add Payment Method",
-            "edit": "Edit Payment Method"
+            "index": "Payment Method",
+            "add": "Add",
+            "edit": "Edit"
         },
         "products": {
-            "index": "Products",
-            "add": "Add Product",
-            "edit": "Edit Product"
+            "index": "Product",
+            "add": "Add",
+            "edit": "Edit"
         },
         "productColors": {
-            "index": "Product Colors",
-            "add": "Add Product Color",
-            "edit": "Edit Product Color"
+            "index": "Product Color",
+            "add": "Add",
+            "edit": "Edit"
         },
         "productSizes": {
-            "index": "Product Sizes",
-            "add": "Add Product Size",
-            "edit": "Edit Product Size"
+            "index": "Product Size",
+            "add": "Add",
+            "edit": "Edit"
         },
         "stocks": {
-            "index": "Stocks",
-            "add": "Add Stock",
-            "edit": "Edit Stock"
+            "index": "Stock",
+            "add": "Add",
+            "edit": "Edit"
         },
         "subcategories": {
-            "index": "Subcategories",
-            "add": "Add Subcategory",
-            "edit": "Edit Subcategory"
+            "index": "Subcategory",
+            "add": "Add",
+            "edit": "Edit"
         }
     }
 }

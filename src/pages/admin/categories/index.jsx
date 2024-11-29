@@ -47,7 +47,7 @@ export default function AdminCategories() {
                 <th style={{ width: "10%" }}>#</th>
                 <th>{t("table.header.name")}</th>
                 <th style={{ width: "10%" }}>{t("table.header.active")}</th>
-                <th style={{ width: "10%" }}>{t("table.header.edit")}</th>
+                <th style={{ width: "10%" }}>{t("table.header.actions")}</th>
               </tr>
             </thead>
             <tbody>

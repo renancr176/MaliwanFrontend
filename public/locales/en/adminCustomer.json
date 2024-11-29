@@ -1,0 +1,46 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "document": "Document",
+                "type": "Person Type",
+                "actions": "Ações"
+            },
+            "body": {
+                "type": {
+                    "0": "Fisica",
+                    "1": "Juridica"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Customer",
+        "fieldLabelName": "Name",
+        "fieldLabelDocument": "Document",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Customer",
+        "success": "Customer registered successfully"
+    },
+    "edit": {
+        "title": "Edit Customer",
+        "success": "Customer updated successfully",
+        "confirm": "Are you sure you want to save changes?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldDocumentLabel": "Document",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        },
+        "errors": {
+            "invalidDocument": "The document is not a valid CPF or CNPJ."
+        }
+    }
+}

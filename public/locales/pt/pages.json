@@ -3,59 +3,59 @@
     "admin": {
         "index": "Admin",
         "brands": {
-            "index": "Marcas",
-            "add": "Adicionar Marca",
-            "edit": "Alterar Marca"
+            "index": "Marca",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "categories": {
-            "index": "Categorias",
-            "add": "Adicionar Categoria",
-            "edit": "Alterar Categoria"
+            "index": "Categoria",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "customers": {
-            "index": "Clientes",
-            "add": "Adicionar Cliente",
-            "edit": "Alterar Cliente"
+            "index": "Cliente",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "genders": {
-            "index": "Gêneros",
-            "add": "Adicionar Gênero",
-            "edit": "Alterar Gênero"
+            "index": "Gênero",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "orders": {
-            "index": "Pedidos",
-            "add": "Adicionar Pedido",
-            "edit": "Alterar Pedido"
+            "index": "Pedido",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "paymentMethods": {
-            "index": "Formas de Pagamento",
-            "add": "Adicionar forma de pagamento",
-            "edit": "Alterar forma de pagamento"
+            "index": "Forma de Pagamento",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "products": {
-            "index": "Produtos",
-            "add": "Adicionar Produto",
-            "edit": "Alterar Produto"
+            "index": "Produto",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "productColors": {
-            "index": "Cores de Produto",
-            "add": "Adicionar Cor de Produto",
-            "edit": "Alterar Cor de Produto"
+            "index": "Core de Produto",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "productSizes": {
             "index": "Tamanhos de Produto",
-            "add": "Adicionar Tamanho de Produto",
-            "edit": "Alterar Tamanho de Produto"
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "stocks": {
-            "index": "Estoques",
-            "add": "Adicionar Estoque",
-            "edit": "Alterar Estoque"
+            "index": "Estoque",
+            "add": "Adicionar",
+            "edit": "Alterar"
         },
         "subcategories": {
-            "index": "Subcategorias",
-            "add": "Adicionar Subcategoria",
-            "edit": "Alterar Subcategoria"
+            "index": "Subcategoria",
+            "add": "Adicionar",
+            "edit": "Alterar"
         }
     }
 }

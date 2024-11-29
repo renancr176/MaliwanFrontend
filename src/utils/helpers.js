@@ -1,5 +1,3 @@
-import { date } from "yup";
-
 export const onlyNumbers = (text) => {
     return text?.toString().replace(/\D/g, "");
 };

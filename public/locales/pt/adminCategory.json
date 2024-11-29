@@ -6,7 +6,7 @@
             "header": {
                 "name": "Nome",
                 "active": "Ativo",
-                "edit": "Alterar"
+                "actions": "Ações"
             },
             "body": {
                 "active": {

@@ -1,12 +1,13 @@
 {
     "index": {
         "labelBtnEdit": "Edit",
+        "labelCategory": "Category",
         "table": {
             "header": {
                 "name": "Name",
                 "sku": "SKU",
                 "active": "Active",
-                "edit": "Edit"
+                "actions": "Actions"
             },
             "body": {
                 "active": {
@@ -23,11 +24,14 @@
     },
     "add": {
         "title": "Add Subcategory",
+        "labelCategory": "Category",
         "success": "Subcategory registered successfully"
     },
     "edit": {
         "title": "Edit Subcategory",
-        "success": "Subcategory updated successfully"
+        "labelCategory": "Category",
+        "success": "Subcategory updated successfully",
+        "confirm": "Are you shure do you want update?"
     },
     "form": {
         "fieldNameLabel": "Nome",

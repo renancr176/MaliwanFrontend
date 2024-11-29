@@ -6,7 +6,7 @@
                 "name": "Name",
                 "sku": "SKU",
                 "active": "Active",
-                "edit": "Edit"
+                "actions": "Actions"
             },
             "body": {
                 "active": {
@@ -27,7 +27,8 @@
     },
     "edit": {
         "title": "Edit Brand",
-        "success": "Brand updated successfully"
+        "success": "Brand updated successfully",
+        "confirm": "Are you sure you want to save changes?"
     },
     "form": {
         "fieldNameLabel": "Nome",

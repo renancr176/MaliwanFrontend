@@ -69,7 +69,7 @@ export default function AdminEditSubcategory() {
     <Container fluid>
       <Row>
         <Col>
-          <h1 className="text-center">{category?.name}</h1>
+          <h1 className="text-center text-secondary">{t("labelCategory")}: {category?.name}</h1>
         </Col>
       </Row>
       <hr/>

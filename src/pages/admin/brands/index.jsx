@@ -48,7 +48,7 @@ export default function AdminBrands() {
                 <th>{t("table.header.name")}</th>
                 <th style={{ width: "10%" }}>{t("table.header.sku")}</th>
                 <th style={{ width: "10%" }}>{t("table.header.active")}</th>
-                <th style={{ width: "10%" }}>{t("table.header.edit")}</th>
+                <th style={{ width: "10%" }}>{t("table.header.actions")}</th>
               </tr>
             </thead>
             <tbody>

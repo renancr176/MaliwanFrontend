@@ -4,40 +4,43 @@
         "table": {
             "header": {
                 "name": "Nome",
-                "sku": "SKU",
-                "active": "Ativo",
+                "document": "CPF/CNPJ",
+                "type": "Tipo Pessoa",
                 "actions": "Ações"
             },
             "body": {
-                "active": {
-                    "true": "Sim",
-                    "false": "Não"
+                "type": {
+                    "0": "Fisica",
+                    "1": "Juridica"
                 }
             }
         }
     },
     "filter": {
-        "labelBtnAdd": "Adicionar Marca",
+        "labelBtnAdd": "Adicionar Cliente",
         "fieldLabelName": "Nome",
+        "fieldLabelDocument": "CPF/CNPJ",
         "submitLabel": "Filtrar"
     },
     "add": {
-        "title": "Adicionar Marca",
-        "success": "Marca cadastrada com sucesso"
+        "title": "Adicionar Cliente",
+        "success": "Cliente cadastrada com sucesso"
     },
     "edit": {
-        "title": "Alterar Marca",
-        "success": "Marca alterada com sucesso",
+        "title": "Alterar Cliente",
+        "success": "Cliente alterada com sucesso",
         "confirm": "Tem certeza que deseja salvar as alterações?"
     },
     "form": {
         "fieldNameLabel": "Nome",
-        "fieldSkuLabel": "SKU",
-        "fieldActiveLabel": "Ativo",
+        "fieldDocumentLabel": "Documento",
         "labelBtnGoBack": "Voltar",
         "labelBtnSubmit": {
             "add": "Adicionar",
             "edit": "Alterar"
+        },
+        "errors": {
+            "invalidDocument": "O documento não é um CPF ou CNPJ válido."
         }
     }
 }
