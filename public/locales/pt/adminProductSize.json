@@ -1,0 +1,43 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "sku": "SKU",
+                "active": "Ativo",
+                "actions": "Ações"
+            },
+            "body": {
+                "active": {
+                    "true": "Sim",
+                    "false": "Não"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Tamanho de Produto",
+        "fieldLabelName": "Nome",
+        "submitLabel": "Filtrar"
+    },
+    "add": {
+        "title": "Adicionar Tamanho de Produto",
+        "success": "Tamanho de Produto cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Tamanho de Produto",
+        "success": "Tamanho de Produto alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}

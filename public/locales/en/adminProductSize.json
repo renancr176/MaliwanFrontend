@@ -1,0 +1,43 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "sku": "SKU",
+                "active": "Active",
+                "actions": "Actions"
+            },
+            "body": {
+                "active": {
+                    "true": "Yes",
+                    "false": "No"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Product Size",
+        "fieldLabelName": "Name",
+        "submitLabel": "Filter"
+    },
+    "add": {
+        "title": "Add Product Size",
+        "success": "Product Size registered successfully"
+    },
+    "edit": {
+        "title": "Edit Product Size",
+        "success": "Product Size updated successfully",
+        "confirm": "Are you sure you want to save changes?"
+    },
+    "form": {
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Active",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        }
+    }
+}
