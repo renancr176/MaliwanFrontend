@@ -13,7 +13,7 @@ export default function ActiveFilterSelect({
 
   return (
     <Form.Group as={Col} className="mb-2">
-      <Form.Label column md={3}>
+      <Form.Label>
         {t("label")}
       </Form.Label>
       <Col>

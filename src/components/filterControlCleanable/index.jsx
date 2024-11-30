@@ -7,6 +7,9 @@ export default function FilterControlCleanable({
   type,
   name,
   value,
+  min,
+  max,
+  step,
   onChange,
   onClear
 }) {
@@ -28,7 +31,7 @@ export default function FilterControlCleanable({
 
   return (
     <Form.Group as={Col} className="mb-2">
-      <Form.Label column md={3}>
+      <Form.Label>
         {label}
       </Form.Label>
       <Col>
@@ -37,6 +40,9 @@ export default function FilterControlCleanable({
             type={type}
             name={name}
             value={innerValue}
+            min={min}
+            max={max}
+            step={step}
             onChange={innerOnChange}
           />
           <InputGroup.Text

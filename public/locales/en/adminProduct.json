@@ -1,0 +1,62 @@
+{
+    "index": {
+        "labelBtnEdit": "Edit",
+        "table": {
+            "header": {
+                "name": "Name",
+                "sku": "SKU",
+                "brand": "Brand",
+                "category": "Category",
+                "subcategory": "Subcategory",
+                "gender": "Gender",
+                "unitPrice": "Unit Price",
+                "quantity": "Stock Quantity",
+                "active": "Active",
+                "actions": "Actions"
+            },
+            "body": {
+                "active": {
+                    "true": "Yes",
+                    "false": "No"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Add Product",
+        "fieldLabelBrand": "Brand",
+        "fieldLabelCategory": "Category",
+        "fieldLabelSubcategory": "Subcategory",
+        "fieldLabelName": "Name",
+        "fieldLabelSku": "Sku",
+        "fieldLabelGender": "Gender",
+        "fieldLabelMinPrice": "Min Price",
+        "fieldLabelMaxPrice": "Max Price",
+        "submitLabel": "Filter",
+        "labelOptNoFilter": "No filter"
+    },
+    "add": {
+        "title": "Add Product",
+        "success": "Product registered successfully"
+    },
+    "edit": {
+        "title": "Edit Product",
+        "success": "Product updated successfully",
+        "confirm": "Are you sure you want to save changes?"
+    },
+    "form": {
+        "fieldLabelBrand": "Brand",
+        "fieldLabelCategory": "Category",
+        "fieldLabelSubcategory": "Subcategory",
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Active",
+        "fieldLabelGender": "Gender",
+        "fieldUnitPriceLabel": "Unit Price",
+        "labelBtnGoBack": "Back",
+        "labelBtnSubmit": {
+            "add": "Add",
+            "edit": "Edit"
+        }
+    }
+}

@@ -9,8 +9,8 @@ export default function useSubcategoryService() {
     return data;
   }
 
-  async function getAllSubcategorys() {
-    const { data } = await api.get("/Subcategory");
+  async function getAllSubcategorys(idCategory) {
+    const { data } = await api.get("/Subcategory", { params: { idCategory } });
     return data;
   }
 

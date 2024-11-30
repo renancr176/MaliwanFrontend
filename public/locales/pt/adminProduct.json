@@ -1,0 +1,62 @@
+{
+    "index": {
+        "labelBtnEdit": "Alterar",
+        "table": {
+            "header": {
+                "name": "Nome",
+                "sku": "SKU",
+                "brand": "Marca",
+                "category": "Categoria",
+                "subcategory": "Subcategoria",
+                "gender": "Gênero",
+                "unitPrice": "Preço Unitário",
+                "quantity": "Quantidade Estoque",
+                "active": "Ativo",
+                "actions": "Ações"
+            },
+            "body": {
+                "active": {
+                    "true": "Sim",
+                    "false": "Não"
+                }
+            }
+        }
+    },
+    "filter": {
+        "labelBtnAdd": "Adicionar Produto",
+        "fieldLabelBrand": "Marca",
+        "fieldLabelCategory": "Categoria",
+        "fieldLabelSubcategory": "Subcategoria",
+        "fieldLabelName": "Nome",
+        "fieldLabelSku": "Sku",
+        "fieldLabelGender": "Genero",
+        "fieldLabelMinPrice": "Preço minimo",
+        "fieldLabelMaxPrice": "Preço maximo",
+        "submitLabel": "Filtrar",
+        "labelOptNoFilter": "Não filtrar"
+    },
+    "add": {
+        "title": "Adicionar Produto",
+        "success": "Produto cadastrada com sucesso"
+    },
+    "edit": {
+        "title": "Alterar Produto",
+        "success": "Produto alterada com sucesso",
+        "confirm": "Tem certeza que deseja salvar as alterações?"
+    },
+    "form": {
+        "fieldLabelBrand": "Marca",
+        "fieldLabelCategory": "Categoria",
+        "fieldLabelSubcategory": "Subcategoria",
+        "fieldNameLabel": "Nome",
+        "fieldSkuLabel": "SKU",
+        "fieldActiveLabel": "Ativo",
+        "fieldLabelGender": "Gênero",
+        "fieldUnitPriceLabel": "Preço Unitário",
+        "labelBtnGoBack": "Voltar",
+        "labelBtnSubmit": {
+            "add": "Adicionar",
+            "edit": "Alterar"
+        }
+    }
+}
