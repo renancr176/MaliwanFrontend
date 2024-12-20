@@ -13,14 +13,26 @@ export default function InputMoney({
   touched,
   errors,
 }) {
+  const formatValue = (value) => {
+    if (value.length > 3)
+      value = parseInt(value).toString();
+    value = value.padStart(onlyNumbers(defaultMask).length, '0').split('');
+    value.splice((value.length - 2), 0, i18n.language.startsWith("pt") ? ',' : '.');
+    value = value.join('');
+    return value;
+  }
+
   const { i18n } = useTranslation();
   const [innerValue, setInnerValue] = useState(`${parseFloat(value).toFixed(2)}`);
   const defaultMask = i18n.language.startsWith("pt") ? "9,99" : "9.99";
-  const [mask, setMask] = useState(defaultMask);
+  const [mask, setMask] = useState(`${parseFloat(value).toFixed(2)}`.length <= defaultMask.length ? defaultMask : formatValue(''.padStart(onlyNumbers(`${parseFloat(value).toFixed(2)}`).length, '9')));
 
   const innerOnChange = (e) => {
     setInnerValue(e.target.value);
-    if (onChange) onChange(e);
+    if (onChange) {
+      e.target.value = parseFloat(e.target.value.replace(',', '.'));
+      onChange(e)
+    };
   };
 
   const beforeMaskedValueChange = (newState, oldState, userInput) => {
@@ -28,13 +40,7 @@ export default function InputMoney({
 
     if (newState.value != oldState.value.replace(i18n.language.startsWith("pt") ? '.' : ',', i18n.language.startsWith("pt") ? ',' : '.') || userInput != null) {
       let newMask = `${mask}`;
-
-      let newValue = `${(userInput != null ? onlyNumbers(oldState.value) : onlyNumbers(oldState.value).substring(0, (onlyNumbers(oldState.value).length - 1)))}${(userInput != null ? userInput : '')}`
-      if (newValue.length > 3)
-        newValue = parseInt(newValue).toString();
-      newValue = newValue.padStart(onlyNumbers(defaultMask).length, '0').split('');
-      newValue.splice((newValue.length - 2), 0, i18n.language.startsWith("pt") ? ',' : '.');
-      newValue = newValue.join('');
+      const newValue = formatValue(`${(userInput != null ? onlyNumbers(oldState.value) : onlyNumbers(oldState.value).substring(0, (onlyNumbers(oldState.value).length - 1)))}${(userInput != null ? userInput : '')}`);
 
       if (userInput != null && onlyNumbers(newValue).length > onlyNumbers(newMask).length) { //Added
           newMask = `9${newMask}`;
@@ -80,7 +86,7 @@ export default function InputMoney({
             mask={mask}
             alwaysShowMask={true}
             value={innerValue}
-            onChange={innerOnChange}
+            onChange={(e) => innerOnChange(e)}
             type="tel"
             name={name}
             beforeMaskedValueChange={beforeMaskedValueChange}
