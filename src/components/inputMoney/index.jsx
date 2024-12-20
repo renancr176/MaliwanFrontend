@@ -10,8 +10,8 @@ export default function InputMoney({
   value = 0.00,
   required,
   onChange,
-  touched,
-  errors,
+  isValid,
+  isInvalid,
 }) {
   const formatValue = (value) => {
     if (value.length > 3)
@@ -78,11 +78,12 @@ export default function InputMoney({
       </Form.Label>
       <Col>
         <InputGroup>
-          <InputGroup.Text id="basic-addon1">R$</InputGroup.Text>
+          <InputGroup.Text className={`${isValid ? "border-success" : ""}
+              ${isInvalid ? "border-danger" : ""}`}>R$</InputGroup.Text>
           <InputMask
             className={`form-control 
-              ${touched?.document && !errors?.document ? "is-valid" : ""}
-              ${touched?.document && errors?.document ? "is-invalid" : ""}`}
+              ${isValid ? "is-valid" : ""}
+              ${isInvalid ? "is-invalid" : ""}`}
             mask={mask}
             alwaysShowMask={true}
             value={innerValue}

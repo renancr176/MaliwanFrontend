@@ -78,8 +78,8 @@ export default function AdminCustomerForm({
               required
               value={values.document}
               onChange={handleChange}
-              touched={touched}
-              errors={errors}
+              isValid={touched.document && !errors.document}
+              isInvalid={touched.document && errors.document}
             />
           </Row>
           <Row className="mt-4">

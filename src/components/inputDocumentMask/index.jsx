@@ -9,8 +9,8 @@ export default function InputDocumentMask({
   value,
   required,
   onChange,
-  touched,
-  errors,
+  isValid,
+  isInvalid,
 }) {
   const cpfMask = "999.999.999-99";
   const cnpjMask = "99.999.999/9999-99";
@@ -51,8 +51,8 @@ export default function InputDocumentMask({
       <Col>
         <InputMask
           className={`form-control 
-            ${touched?.document && !errors?.document ? "is-valid" : ""}
-            ${touched?.document && errors?.document ? "is-invalid" : ""}`}
+            ${isValid ? "is-valid" : ""}
+            ${isInvalid ? "is-invalid" : ""}`}
           mask={mask}
           placeholder={mask.replaceAll("9", "0")}
           value={innerValue}

@@ -268,31 +268,13 @@ export default function AdminProductForm({
             </Form.Group>
           </Row>
           <Row>
-            {/* <Form.Group as={Col} className="mb-2">
-              <Form.Label>
-                <span className="text-danger">*</span>
-                {t("fieldUnitPriceLabel")}
-              </Form.Label>
-              <Col>
-                <Form.Control
-                  type="number"
-                  name="unitPrice"
-                  min={0}
-                  step={0.01}
-                  value={values.unitPrice}
-                  onChange={handleChange}
-                  isValid={touched.unitPrice && !errors.unitPrice}
-                  isInvalid={touched.unitPrice && errors.unitPrice}
-                />
-              </Col>
-            </Form.Group> */}
             <InputMoney
               label={t("fieldUnitPriceLabel")}
               name="unitPrice"
               value={values.unitPrice}
               onChange={handleChange}
-              touched={touched}
-              errors={errors}
+              isValid={touched.unitPrice && !errors.unitPrice}
+              isInvalid={touched.unitPrice && errors.unitPrice}
             />
             <Col className="mt-5">
               <Form.Check
