@@ -10,6 +10,7 @@ import useBrandService from "../../../services/brandService";
 import useCategoryService from "../../../services/categoryService";
 import useSubcategoryService from "../../../services/subcategoryService";
 import useGenderService from "../../../services/genderService";
+import InputMoney from "../../../components/inputMoney";
 
 export default function AdminProductForm({
   onSubmit,
@@ -19,7 +20,7 @@ export default function AdminProductForm({
     idSubcategory: 0,
     idGender: 0,
     name: "",
-    unitPrice: 0.0,
+    unitPrice: undefined,
     sku: "",
     active: true,
   },
@@ -48,8 +49,7 @@ export default function AdminProductForm({
       })
       .catch((error) => console.error(error));
 
-    if (data.idCategory > 0)
-      getAllSubcategorysByCategory(data.idCategory);
+    if (data.idCategory > 0) getAllSubcategorysByCategory(data.idCategory);
 
     getAllGenders()
       .then(({ data }) => {
@@ -120,7 +120,7 @@ export default function AdminProductForm({
                   isValid={touched.idBrand && !errors.idBrand}
                   isInvalid={touched.idBrand && errors.idBrand}
                 >
-                  {values.idBrand == 0 ? (<option value=""></option>) : null}
+                  {values.idBrand == 0 ? <option value=""></option> : null}
                   {brands.map((item, index) => (
                     <option
                       key={item.id}
@@ -146,7 +146,7 @@ export default function AdminProductForm({
                   isValid={touched.idGender && !errors.idGender}
                   isInvalid={touched.idGender && errors.idGender}
                 >
-                  {values.idGender == 0 ? (<option value=""></option>) : null}
+                  {values.idGender == 0 ? <option value=""></option> : null}
                   {genders.map((item, index) => (
                     <option
                       key={item.id}
@@ -186,7 +186,7 @@ export default function AdminProductForm({
                   isValid={touched.idCategory && !errors.idCategory}
                   isInvalid={touched.idCategory && errors.idCategory}
                 >
-                  {values.idCategory == 0 ? (<option value=""></option>) : null}
+                  {values.idCategory == 0 ? <option value=""></option> : null}
                   {categories.map((item, index) => (
                     <option
                       key={item.id}
@@ -212,7 +212,9 @@ export default function AdminProductForm({
                   isValid={touched.idSubcategory && !errors.idSubcategory}
                   isInvalid={touched.idSubcategory && errors.idSubcategory}
                 >
-                  {values.idSubcategory == 0 ? (<option value=""></option>) : null}
+                  {!values.idSubcategory || values.idSubcategory == 0 ? (
+                    <option value=""></option>
+                  ) : null}
                   {subcategories.map((item, index) => (
                     <option
                       key={item.id}
@@ -266,7 +268,7 @@ export default function AdminProductForm({
             </Form.Group>
           </Row>
           <Row>
-            <Form.Group as={Col} className="mb-2">
+            {/* <Form.Group as={Col} className="mb-2">
               <Form.Label>
                 <span className="text-danger">*</span>
                 {t("fieldUnitPriceLabel")}
@@ -283,7 +285,15 @@ export default function AdminProductForm({
                   isInvalid={touched.unitPrice && errors.unitPrice}
                 />
               </Col>
-            </Form.Group>
+            </Form.Group> */}
+            <InputMoney
+              label={t("fieldUnitPriceLabel")}
+              name="unitPrice"
+              value={values.unitPrice}
+              onChange={handleChange}
+              touched={touched}
+              errors={errors}
+            />
             <Col className="mt-5">
               <Form.Check
                 type="switch"

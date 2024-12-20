@@ -28,7 +28,7 @@ export default function AdminProductColorForm({
   };
 
   const schema = yup.object().shape({
-    name: yup.string().required().min(5).max(255),
+    name: yup.string().required().min(1).max(255),
     sku: yup.string().required().min(1).max(5),
     bgColor: yup
       .string()
@@ -86,8 +86,8 @@ export default function AdminProductColorForm({
                     e.target.value = e.target.value.toUpperCase();
                     handleChange(e);
                   }}
-                  isValid={touched.name && !errors.name}
-                  isInvalid={touched.name && errors.name}
+                  isValid={touched.sku && !errors.sku}
+                  isInvalid={touched.sku && errors.sku}
                 />
               </Col>
             </Form.Group>
@@ -105,8 +105,8 @@ export default function AdminProductColorForm({
                   maxLength={5}
                   value={values.bgColor}
                   onChange={handleChange}
-                  isValid={touched.name && !errors.name}
-                  isInvalid={touched.name && errors.name}
+                  isValid={touched.bgColor && !errors.bgColor}
+                  isInvalid={touched.bgColor && errors.bgColor}
                 />
               </Col>
             </Form.Group>
@@ -122,8 +122,8 @@ export default function AdminProductColorForm({
                   maxLength={5}
                   value={values.textColor}
                   onChange={handleChange}
-                  isValid={touched.name && !errors.name}
-                  isInvalid={touched.name && errors.name}
+                  isValid={touched.textColor && !errors.textColor}
+                  isInvalid={touched.textColor && errors.textColor}
                 />
               </Col>
             </Form.Group>

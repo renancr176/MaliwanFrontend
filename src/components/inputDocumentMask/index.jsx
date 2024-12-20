@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Col, Form } from "react-bootstrap";
 import InputMask from "react-input-mask";
 import { onlyNumbers } from "../../utils/helpers";
@@ -16,15 +16,6 @@ export default function InputDocumentMask({
   const cnpjMask = "99.999.999/9999-99";
   const [innerValue, setInnerValue] = useState(value);
   const [mask, setMask] = useState(cpfMask);
-  
-
-//   useEffect(() => {
-//     if (onlyNumbers(innerValue).length > 11 && mask != cnpjMask) {
-//       setMask(cnpjMask);
-//     } else if (onlyNumbers(innerValue).length <= 11 && mask != cpfMask) {
-//       setMask(cpfMask);
-//     }
-//   }, [innerValue]);
 
   const inneOnChange = (e) => {
     setInnerValue(e.target.value);
@@ -54,7 +45,7 @@ export default function InputDocumentMask({
   return (
     <Form.Group as={Col} className="mb-2">
       <Form.Label column md={3}>
-        {required ? (<span className="text-danger">*</span> ) : null}
+        {required ? <span className="text-danger">*</span> : null}
         {label}
       </Form.Label>
       <Col>
